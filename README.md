@@ -21,7 +21,7 @@ This project aims to demonstrate basic web development skills and the collaborat
 
 * HTML
 * CSS
-* 
+  
 ## How to Run Locally
 
 1. Clone the repository: `git clone [repository url]`
