@@ -1,0 +1,274 @@
+
+
+/* Reset */
+body, h1, h2, h3, p, ul, li, a, img {
+    margin: 0;
+    padding: 0; /* Fixed padding value */
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header Section */
+header {
+    background-color: #4CAF50;
+    display: flex;
+    justify-content: space-between; /* About Us on the left, nav links on the right */
+    align-items: center;
+    padding: 1rem;
+}
+
+/* About Us Heading */
+.heading {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-left: 100px;
+    
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex; /* Align items horizontally */
+    gap: 1.5rem; /* Spacing between links */
+    margin-right:500px;
+    
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+/* Introduction Section */
+.intro {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #e8f5e9;
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #4CAF50;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Team Section */
+.team {
+    padding: 3rem 1rem;
+    background-color: #fff;
+}
+
+.team h2 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+/* Contact Form Section */
+.contact-intro {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #e8f5e9;
+}
+
+.contact-intro h2 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+.contact-intro p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact Form */
+.contact-form {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #4CAF50;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Additional Content Section */
+.additional-content {
+    padding: 3rem 1rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.additional-content h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 1.5rem;
+}
+
+.additional-content ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+}
+
+.additional-content ul li {
+    margin-bottom: 1rem;
+}
+
+/* Contact Details Section */
+.contact-details {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f1f1f1;
+}
+
+.contact-details h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 1.5rem;
+}
+
+.contact-details p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.contact-details a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+.team-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.member {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+}
+
+.member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.member h3 {
+    color: #4CAF50;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.member p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member {
+        max-width: 90%;
+    }
+}
