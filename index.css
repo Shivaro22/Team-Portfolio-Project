@@ -46,14 +46,16 @@ html,body{
     list-style: none;
 }
 
-.nav-part-1 ul li{
+.nav-part-1 ul a{
     margin: 40px;
     font-style: 19px;
     font-weight: 500;
     text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
     cursor: pointer;
 }
-.nav-part-1 ul li:hover{
+.nav-part-1 ul a:hover{
     color: #f9fef9;
 }
 
